@@ -1,0 +1,30 @@
+.illustration {
+  float: right;
+  padding-bottom: 1em;
+  /* display: inline; */
+}
+
+.input-field {
+  font-size: 3rem;
+  padding: 1rem;
+}
+
+.input-field:focus {
+  border: 5px;
+  border-style: groove;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #ffffff;
+  background-color: #000;
+}
+
+li:hover {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
