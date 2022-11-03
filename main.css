@@ -1,7 +1,18 @@
+/* html,
+body {
+  margin: 0px;
+} */
+
 .illustration {
   float: right;
   padding-bottom: 1em;
   /* display: inline; */
+}
+
+.pictures {
+  width: 30vw;
+  display: block;
+  margin: auto;
 }
 
 .input-field {
@@ -27,4 +38,41 @@ h6 {
 li:hover {
   font-weight: bold;
   font-size: 1.2rem;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.1fr 0.8fr 0.1fr;
+  grid-template-areas:
+    "header header header"
+    "content content content"
+    "footer footer footer";
+}
+
+.header {
+  grid-area: header;
+}
+
+.content {
+  grid-area: content;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.Activities,
+.Events,
+.Restaurants {
+  display: flex;
+  /* justify-content: center; */
+  padding: 0.03vw 1vw;
+}
+
+.Activities h1,
+.Events h1,
+.Restaurants h1 {
+  text-align: center;
+}
+
+.footer {
+  grid-area: footer;
 }
